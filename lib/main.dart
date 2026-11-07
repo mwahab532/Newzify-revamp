@@ -11,7 +11,7 @@ import 'package:mynewsapp/firebase_options.dart';
 /// runApp. All DI now goes through InitialBinding rather than MultiProvider.
 void main() {
   runZonedGuarded(() async {
-    WidgetsFlutterBinding.ensureInitialized();
+    WidgetsFlutterBinding.ensureInitialized()
     await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform);
 
