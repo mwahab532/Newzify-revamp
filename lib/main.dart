@@ -21,6 +21,6 @@ void main() {
     runApp(const Newszify());
   }, (error, stack) {
     Get.find<AppErrorHandler>()
-        .report(error, stack, context: 'zone', fatal: true
+        .report(error, stack, context: 'zone', fatal: true);
   });
 }
