@@ -18,7 +18,7 @@ void main() {
     await InitialBinding().dependenciesAsync();
     Get.find<AppErrorHandler>().install();
 
-    runApp(const Newszify())
+    runApp(const Newszify());
   }, (error, stack) {
     Get.find<AppErrorHandler>()
         .report(error, stack, context: 'zone', fatal: true);
